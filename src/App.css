@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  position: fixed; /* Sticks the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.text-section {
+  max-width: 50%;
+}
+
+.text-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #5a8f42;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background-color: #4e7b39;
+}
+
+.image-section img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.section li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li:hover {
+  background-color: #e3f2e1;
+  color: #2b7a3d;
+}
+
+.nav-links li:active {
+  background-color: #c9e5c9;
+}
+
+.quick-facts-section {
+  background-color: #f3f8f2;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c5e1a;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+}
+
+.quick-facts-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quick-facts-list li {
+  background-color: #e6f2e1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quick-facts-list li:hover {
+  transform: scale(1.05);
+  background-color: #d9edd3;
+}
+
+.quick-facts-list li::before {
+  content: "🌿";
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .quick-facts-section {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+
+  .quick-facts-list li {
+    font-size: 14px;
+  }
+}
+
+
+.benefits-section {
+  background-color: #f9fdf8;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c5e1a;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+}
+
+.benefits-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.benefits-list li {
+  background-color: #e6f2e1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.benefits-list li:hover {
+  transform: scale(1.05);
+  background-color: #d9edd3;
+}
+
+.benefits-list li::before {
+  content: "✔️"; /* Checkmark icon */
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .benefits-section {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+
+  .benefits-list li {
+    font-size: 14px;
+  }
+}
+
+.varieties-section {
+  background-color: #f3f8f2;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c5e1a;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+}
+
+.varieties-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.varieties-list li {
+  background-color: #e6f2e1;
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.varieties-list li:hover {
+  transform: scale(1.05);
+  background-color: #d9edd3;
+}
+
+.varieties-list li::before {
+  content: "🌱"; /* Aloe Vera-themed icon */
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .varieties-section {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+
+  .varieties-list li {
+    font-size: 14px;
+  }
+}
